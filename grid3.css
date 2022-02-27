@@ -9,7 +9,7 @@ body {
 /* Style the header */
 .header {
   grid-area: header;
-  background-color: #f1f1f1;
+  background-color: #000000;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -29,7 +29,8 @@ body {
 .middle,
 .right {
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  /* height: 300px;*/ /* Should be removed. Only for demonstration */
+  background-color: #000000;
 }
 
 /* Style the left column */
@@ -40,6 +41,7 @@ body {
 /* Style the middle column */
 .middle {
   grid-area: middle;
+
 }
 
 /* Style the right column */
@@ -50,7 +52,7 @@ body {
 /* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: #f1f1f1;
+  background-color: #000000;
   padding: 10px;
   text-align: center;
 }
