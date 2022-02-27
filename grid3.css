@@ -21,33 +21,32 @@ body {
   display: grid;
   grid-template-areas: 
     'header header header header header header' 
-    'left left left right right right'
-    'middle middle middle middle middle middle'
+    'menu menu menu file file file'
+    'main main main main main main'
     'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
+  grid-column-gap: 10px; /* - if you want gap between the columns */
 } 
 
-.left,
-.right,
-.middle {
+.menu,
+.file,
+.main {
   padding: 10px;
   /* height: 300px;*/ /* Should be removed. Only for demonstration */
 }
 
 /* Style the left column */
-.left {
-  grid-area: left;
+.menu {
+  grid-area: 2 / 1;
 }
 
 /* Style the right column */
-.right {
-    grid-area: right;
+.file {
+    grid-area: 2 / 2;
 }
 
 /* Style the middle column */
-.middle {
-  grid-area: middle;
-
+.main {
+  grid-area: 3 / 1 / span 2;
 }
 
 /* Style the footer */
