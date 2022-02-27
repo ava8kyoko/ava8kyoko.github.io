@@ -8,6 +8,17 @@ body {
   background-color: #000000;
 }
 
+/* The grid container */
+.grid-container {
+    display: grid;
+    /*grid-template-areas: 
+      'header header header header header header' 
+      'menu menu menu file file file'
+      'main main main main main main'
+      'footer footer footer footer footer footer';*/
+    grid-column-gap: 10px; /* - if you want gap between the columns */
+} 
+
 /* Style the header */
 .header {
   grid-area: header;
@@ -15,17 +26,6 @@ body {
   text-align: center;
   font-size: 35px;
 }
-
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'menu menu menu file file file'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
-  grid-column-gap: 10px; /* - if you want gap between the columns */
-} 
 
 .menu,
 .file,
@@ -46,7 +46,7 @@ body {
 
 /* Style the middle column */
 .main {
-  grid-area: 3 / 1 / span 2;
+  grid-area: 3;
 }
 
 /* Style the footer */
