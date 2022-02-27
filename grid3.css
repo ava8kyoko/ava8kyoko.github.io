@@ -4,12 +4,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  background-color: #000000;
 }
 
 /* Style the header */
 .header {
   grid-area: header;
-  background-color: #000000;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -20,22 +21,27 @@ body {
   display: grid;
   grid-template-areas: 
     'header header header header header header' 
-    'left middle middle middle middle right' 
+    'left left left right right right'
+    'middle middle middle middle middle middle'
     'footer footer footer footer footer footer';
   /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
 
 .left,
-.middle,
-.right {
+.right,
+.middle {
   padding: 10px;
   /* height: 300px;*/ /* Should be removed. Only for demonstration */
-  background-color: #000000;
 }
 
 /* Style the left column */
 .left {
   grid-area: left;
+}
+
+/* Style the right column */
+.right {
+    grid-area: right;
 }
 
 /* Style the middle column */
@@ -44,15 +50,9 @@ body {
 
 }
 
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
 /* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: #000000;
   padding: 10px;
   text-align: center;
 }
